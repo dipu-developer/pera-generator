@@ -37,10 +37,8 @@ but.addEventListener("click", function () {
 copy.addEventListener("click", function () {
   var txt = document.getElementById("text")
   txt.select();
+  txt.setSelectionRange(0, 99999); 
   navigator.clipboard.writeText(txt.value);
-  alert("Peragraph is copy")
-  
-//   getPera(a);
 });
 a.addEventListener("keypress", function(event) {
     if (event.key === "Enter") {
@@ -48,3 +46,4 @@ a.addEventListener("keypress", function(event) {
         document.getElementById("submit").click();
     }
 });
+
