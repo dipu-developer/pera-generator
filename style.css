@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #182C61;
+}
+.basic{
+    background-color: #3B3B98;
+}
+.basic p{
+    text-align: center;
+    color: #fff;
+    font-family: cursive;
+    font-weight: 400;
+    font-size: 2.5rem;
+}
+.basic a{
+    text-decoration: none;
+    color: #d88e8e;
+}
+.inputbox{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 0 0 0 ;
+}
+.inputbox input{
+    padding: 20px;
+    border: none;
+    border-radius: 5px;
+    margin-inline: 10px;
+    width: 50%;
+    min-width: 200px;
+    max-width: 400px;
+
+}
+input::placeholder{
+    font-size: 18px;
+}
+button{
+    padding: 20px;
+    width: 30%;
+    max-width: 120px;
+    min-width: 100px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3B3B98;
+    color: #fff;
+    font-size: 16px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
+    transition: width;
+    transition: all .2s ease-in-out;
+    
+}
+button:active{
+    transform: scale(0.8);
+}
+.output{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 5px;
+
+}
+.output textarea{
+    width: 80%;
+    font-size: 20px;
+    border-radius: 5px;
+    overflow: auto;
+    height: 50vh;
+}
+#warning{
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    display: none;
+    margin-top: 10px;
+}
+footer{
+    margin-top: 30vh;
+    background-color: #3B3B98;
+}
+
+@media screen and (max-width:700px){
+    .basic p{
+        font-size: 1.5rem;
+    }
+    .output{
+        width: 98%;
+    }
+    .output textarea{
+        width: 96%;
+    }
+    
+input::placeholder{
+    font-size: 12px;
+}
+footer{
+    margin-top: 14vh;
+}
+}
+
+
